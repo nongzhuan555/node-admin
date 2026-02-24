@@ -202,7 +202,7 @@ const NotificationList: React.FC = () => {
           onChange={(key) => setParams({ ...params, type: Number(key), page: 1 })}
           style={{ marginBottom: 16 }}
           tabPosition={screens.xs ? 'top' : 'top'}
-          size={screens.xs ? 'small' : 'default'}
+          size={screens.xs ? 'small' : 'middle'}
         />
         
         <Table
@@ -217,7 +217,7 @@ const NotificationList: React.FC = () => {
             total: total,
             showTotal: (total) => `共 ${total} 条通知`,
             onChange: (page, pageSize) => setParams({ ...params, page, pageSize }),
-            size: screens.xs ? 'small' : 'default',
+            size: (screens.xs ? 'small' : 'default') as any,
             showSizeChanger: !screens.xs
           }}
         />

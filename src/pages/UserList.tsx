@@ -166,7 +166,7 @@ const UserList: React.FC = () => {
             pageSize: params.pageSize,
             total: total,
             onChange: (page, pageSize) => setParams({ ...params, page, pageSize }),
-            size: screens.xs ? 'small' : 'default',
+            size: (screens.xs ? 'small' : 'default') as any,
             showSizeChanger: !screens.xs
           }}
         />

@@ -53,7 +53,7 @@ git push origin main
 # 服务器终端
 cd /opt
 # 替换为你的实际仓库地址
-git clone https://gitee.com/your-username/nongyu-admin.git
+git clone https://github.com/nongzhuan555/node-admin
 cd nongyu-admin
 ```
 
